@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/css/onsenui.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/css/onsen-css-components.min.css">
+    <style>
+        .flashcard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Flashcard App</div>
+        </ons-toolbar>
+
+        <div id="flashcard-container" class="flashcard"></div>
+
+        <ons-button onclick="nextFlashcard()">Next Flashcard</ons-button>
+    </ons-page>
+
+    <script src="https://cdn.rawgit.com/OnsenUI/OnsenUI/master/js/onsenui.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
